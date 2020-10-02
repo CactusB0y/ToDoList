@@ -10831,6 +10831,24 @@ div h1 {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 60px;
+  margin-bottom: 20px;
+}
+
+.modifWithTask {
+  border: solid black 2px;
+  width: 917px;
+}
+
+.btnWithTask {
+  background-color: #54B810;
+  width: 100px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.spanWithTask {
+  font-weight: bold;
 }
 
 #redimLogo {
@@ -10852,5 +10870,9 @@ div h1 {
   font-size: 18px;
   text-decoration: underline;
   font-size: 40px;
+}
+
+#placeHere {
+  margin-top: 50px;
 }
 /*# sourceMappingURL=app.css.map */

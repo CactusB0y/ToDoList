@@ -18,7 +18,7 @@
     <!-- div input add et btn add -->
     <div class="divPosi">
         <input id="inputAdd" type="text">
-        <button class="btnATFE ml-2">ajouter</button>
+        <button id="btnAddHere" class="btnATFE ml-2">ajouter</button>
     </div>
 
     <!-- titre h5 + div btn tous, en cours, fini -->
@@ -32,13 +32,22 @@
     </div>
 
     <!-- container des taches -->
-    <div id="placeHere" class="container">
-        
+    <div id="placeHere" class="container d-flex justify-content-center">
+        <div class="row modifWithTask pt-5 pb-5">
+            <div class="col-6 text-center">
+                <span class="spanWithTask">moise est un homme qui aime faire 50/50 lorem62 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, reprehenderit fugit consequatur fugiat error doloremque odio obcaecati vel saepe ad culpa explicabo iusto doloribus ipsum quas nobis officia eos? Sequi minus tempore excepturi? Corrupti ut aliquam repudiandae neque nisi dolor quidem tempora recusandae aspernatur consectetur!</span>
+            </div>
+            <div class="col-6 text-center">
+                <button class="btnWithTask">validé</button>
+                <button class="btnWithTask">modifier</button>
+                <button class="btnWithTask">supprimer</button>
+            </div>
+        </div>
     </div>
 
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="./public/js/main.js"></script>
+    <script type="module" src="./public/js/main.js"></script>
 </body>
 </html>

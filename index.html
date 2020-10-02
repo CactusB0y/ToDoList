@@ -5,8 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDoList</title>
     <link rel="stylesheet" href="./public/css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <!-- div du titre  -->
+    <div class="d-flex justify-content-around divTitre ">
+        <h1>ToDoList</h1>
+        <img id ="redimLogo" src="./public/img/logo.jpg" alt="">
+    </div>
+
+    <!-- div input add et btn add -->
+    <div class="divPosi">
+        <input id="inputAdd" type="text">
+        <button class="btnATFE ml-2">ajouter</button>
+    </div>
+
+    <!-- titre h5 + div btn tous, en cours, fini -->
+    <div class="divPosi">
+        <h5 id="h5Trier" class="pt-5 pl-5">TRIER</h5>
+    </div>
+    <div class="divPosi">
+        <button class="btnATFE mr-2">tous</button>
+        <button class="btnATFE">en cours</button>
+        <button class="btnATFE ml-2">fini</button>
+    </div>
+
+    <!-- container des taches -->
+    <div id="placeHere" class="container">
+        
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="./public/js/main.js"></script>
 </body>
 </html>

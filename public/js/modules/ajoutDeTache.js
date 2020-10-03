@@ -12,7 +12,7 @@ export let btnCol2;
 
 btnAdd.addEventListener('click', ()=>{
     divWithTask = document.createElement('div');
-    divWithTask.setAttribute('class', 'row modifWithTask py-5 mt-5')
+    divWithTask.setAttribute('class', 'row modifWithTask py-5 my-5');
     divStockTask.appendChild(divWithTask);
     divCol10 = document.createElement('div');
     divCol10.setAttribute('class', 'col-10 text-center');
@@ -42,32 +42,32 @@ btnAdd.addEventListener('click', ()=>{
 leCorps.addEventListener('keydown', (e)=>{
     if(e.key == "Enter"){
         divWithTask = document.createElement('div');
-    divWithTask.setAttribute('class', 'row modifWithTask py-5 mt-5')
-    divStockTask.appendChild(divWithTask);
-    divCol10 = document.createElement('div');
-    divCol10.setAttribute('class', 'col-10 text-center');
-    divWithTask.appendChild(divCol10);
-    spanWithTask = document.createElement('span');
-    spanWithTask.setAttribute('class', 'spanWithTask');
-    spanWithTask.innerText = inputAdd.value;
-    divCol10.appendChild(spanWithTask);
-    divCol2 = document.createElement('div');
-    divCol2.setAttribute('class', 'col-2 text-center d-flex flex-column');
-    divWithTask.appendChild(divCol2);
-    for (let i = 0; i < 3; i++) {
+        divWithTask.setAttribute('class', 'row modifWithTask py-5 my-5')
+        divStockTask.appendChild(divWithTask);
+        divCol10 = document.createElement('div');
+        divCol10.setAttribute('class', 'col-10 text-center');
+        divWithTask.appendChild(divCol10);
+        spanWithTask = document.createElement('span');
+        spanWithTask.setAttribute('class', 'spanWithTask');
+        spanWithTask.innerText = inputAdd.value;
+        divCol10.appendChild(spanWithTask);
+        divCol2 = document.createElement('div');
+        divCol2.setAttribute('class', 'col-2 text-center d-flex flex-column');
+        divWithTask.appendChild(divCol2);
+        for (let i = 0; i < 3; i++) {
         btnCol2 = document.createElement('button');
-        if (i == 0) {
+            if (i == 0) {
             btnCol2.innerText = "validé";
-        } else if (i == 1){
+            } else if (i == 1){
             btnCol2.innerText = "modifier";
-        } else {
+            } else {
             btnCol2.innerText = "supprimer";
+            }
+            btnCol2.setAttribute('class', 'btnWithTask');
+            divCol2.appendChild(btnCol2);
+            inputAdd.value = "";
+            }
         }
-        btnCol2.setAttribute('class', 'btnWithTask');
-        divCol2.appendChild(btnCol2);
-        inputAdd.value = "";
-        }
-    }
 })
 
 

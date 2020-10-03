@@ -66,6 +66,6 @@ leCorps.addEventListener('keydown', (e)=>{
         btnCol2.setAttribute('class', 'btnWithTask');
         divCol2.appendChild(btnCol2);
         inputAdd.value = "";
-    }
+        }
     }
 })

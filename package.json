@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/CactusB0y/ToDoList#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.0",
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1"
   }

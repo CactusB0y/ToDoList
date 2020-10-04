@@ -14,6 +14,7 @@ btnAdd.addEventListener('click', ()=>{
     divWithTask = document.createElement('div');
     divWithTask.setAttribute('class', 'row modifWithTask py-5 my-5');
     divWithTask.setAttribute('style', 'background-color: white');
+    divWithTask.classList.add('encours');
     divStockTask.appendChild(divWithTask);
     divCol10 = document.createElement('div');
     divCol10.setAttribute('class', 'col-10 text-center');

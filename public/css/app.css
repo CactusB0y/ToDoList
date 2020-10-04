@@ -10877,4 +10877,10 @@ div h1 {
 #placeHere {
   margin-top: 50px;
 }
+
+#spanModifInput {
+  width: 100px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 /*# sourceMappingURL=app.css.map */

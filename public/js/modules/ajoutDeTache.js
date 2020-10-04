@@ -9,10 +9,11 @@ export let divCol2;
 export let btnCol2;
 
 
-
+//création d'une tache
 btnAdd.addEventListener('click', ()=>{
     divWithTask = document.createElement('div');
     divWithTask.setAttribute('class', 'row modifWithTask py-5 my-5');
+    divWithTask.setAttribute('style', 'background-color: white');
     divStockTask.appendChild(divWithTask);
     divCol10 = document.createElement('div');
     divCol10.setAttribute('class', 'col-10 text-center');
